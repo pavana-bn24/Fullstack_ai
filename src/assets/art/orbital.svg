@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="760" viewBox="0 0 720 760" fill="none">
+<defs>
+ <radialGradient id="bg" cx=".49" cy=".42" r=".68"><stop stop-color="#344338"/><stop offset=".65" stop-color="#18231e"/><stop offset="1" stop-color="#111a16"/></radialGradient>
+ <radialGradient id="sphere" cx=".27" cy=".2" r=".82"><stop stop-color="#edfac9"/><stop offset=".22" stop-color="#c7d798"/><stop offset=".54" stop-color="#859a65"/><stop offset=".8" stop-color="#3b523d"/><stop offset="1" stop-color="#18281f"/></radialGradient>
+ <linearGradient id="orbit" x1="160" y1="190" x2="568" y2="583" gradientUnits="userSpaceOnUse"><stop stop-color="#edf8d2"/><stop offset=".39" stop-color="#a2ba81"/><stop offset=".62" stop-color="#425b3d"/><stop offset="1" stop-color="#c9e5a0"/></linearGradient>
+ <linearGradient id="fine" x1="200" y1="210" x2="530" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity=".02"/></linearGradient>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="#bbc5b1" stroke-opacity=".08" stroke-width=".7"/></pattern>
+ <filter id="shadow"><feGaussianBlur stdDeviation="20"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".07"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+ <clipPath id="clip"><circle cx="360" cy="350" r="161"/></clipPath>
+</defs>
+<path fill="url(#bg)" d="M0 0h720v760H0z"/>
+<path fill="url(#grid)" d="M0 0h720v760H0z"/>
+<circle cx="360" cy="350" r="283" stroke="#d3e4bf" stroke-opacity=".09"/>
+<circle cx="360" cy="350" r="238" stroke="#d3e4bf" stroke-opacity=".06" stroke-dasharray="3 8"/>
+<path d="M360 35v57m0 516v59M45 350h57m516 0h57" stroke="#d2e1c1" stroke-opacity=".25"/>
+<ellipse cx="363" cy="588" rx="171" ry="22" fill="#020804" opacity=".6" filter="url(#shadow)"/>
+<g transform="rotate(-37 360 350)"><ellipse cx="360" cy="350" rx="265" ry="91" stroke="url(#orbit)" stroke-width="2"/><ellipse cx="360" cy="350" rx="277" ry="99" stroke="#acc28e" stroke-opacity=".2" stroke-width=".6"/></g>
+<circle cx="360" cy="350" r="161" fill="url(#sphere)" filter="url(#grain)"/>
+<g clip-path="url(#clip)" stroke="url(#fine)" stroke-width=".8">
+ <ellipse cx="360" cy="350" rx="45" ry="161" transform="rotate(-24 360 350)"/><ellipse cx="360" cy="350" rx="94" ry="161" transform="rotate(-24 360 350)"/><ellipse cx="360" cy="350" rx="135" ry="161" transform="rotate(-24 360 350)"/>
+ <ellipse cx="360" cy="350" rx="161" ry="35" transform="rotate(-24 360 350)"/><ellipse cx="360" cy="350" rx="161" ry="90" transform="rotate(-24 360 350)"/><ellipse cx="360" cy="350" rx="161" ry="135" transform="rotate(-24 360 350)"/>
+</g>
+<g transform="rotate(-37 360 350)"><path d="M95 350a265 91 0 0 0 530 0" stroke="url(#orbit)" stroke-width="3.5"/><path d="M83 350a277 99 0 0 0 554 0" stroke="#c9e5a0" stroke-opacity=".38" stroke-width=".7"/></g>
+<g transform="rotate(40 360 350)"><ellipse cx="360" cy="350" rx="231" ry="79" stroke="#cfddbb" stroke-opacity=".26" stroke-width="1"/></g>
+<circle cx="577" cy="210" r="8" fill="#d9edac"/><circle cx="577" cy="210" r="17" stroke="#d9edac" stroke-opacity=".2"/>
+<circle cx="170" cy="484" r="5" fill="#e8f1d3"/><circle cx="245" cy="113" r="3" fill="#d9edac" opacity=".7"/>
+<path d="M32 47V32h15m626 0h15v15M32 698v15h15m626 0h15v-15" stroke="#d8e6c6" stroke-opacity=".5"/>
+</svg>

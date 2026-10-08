@@ -1,0 +1,55 @@
+FULLAI.IN — SEPARATE PREMIUM VISUAL REDESIGN
+
+This is a separate working copy. Keep your original project in its own folder.
+The delivered dist folder is a production build for review, not a deployment.
+
+RUN ON WINDOWS
+1. Install Node.js 24 LTS from https://nodejs.org/ if it is not already installed.
+2. Extract this ZIP completely into a new folder, for example:
+   C:\Projects\FullAI-Redesign
+3. Open Command Prompt or PowerShell in the extracted FullAI-Redesign folder
+   containing package.json (FullAI-Redesign\package.json).
+4. Run:
+   node --version
+   npm ci
+   npm run dev -- --host 127.0.0.1 --port 5174 --strictPort
+5. Open the exact local address printed by Vite, normally:
+   http://localhost:5174
+
+Port 5174 is intentional, so this does not conflict with BrandMint on port 5173.
+If 5174 is already in use, stop your previous FullAI development server with
+Ctrl+C and run the command again. --strictPort prevents silently switching ports.
+
+BUILD AND PREVIEW
+Run:
+   npm run build
+   npm run preview -- --host 127.0.0.1 --port 5174 --strictPort
+Then open the printed local preview URL.
+Stop either server with Ctrl+C.
+
+IMPORTANT PAYMENT BOUNDARY
+Vite serves the frontend. It does not execute PHP.
+The original Razorpay/payment code, host restrictions, and server configuration
+have been retained unchanged. The payment backend requires the existing correct
+PHP/server setup, approved fullai.in host configuration, and real credentials
+stored outside the public web root. Do not enter real payment or personal details
+into a local visual review. No live checkout or payment was tested, submitted,
+or deployed as part of this redesign.
+
+REVIEW CHECKLIST
+- Review desktop, tablet, and phone widths, including a narrow 320px viewport.
+- Switch EN / ಕನ್ನಡ; review headings, body text, labels, buttons and navigation.
+- Open Free Resources, scroll its full list, then close with its X or Escape.
+- Open Sign Up to inspect the form, then close without submitting.
+- Check each in-page navigation link and keyboard focus visibility.
+- Play the original showcase video when online. All original YouTube links remain.
+- Enable your operating system's reduced-motion preference and review scrolling.
+
+VERIFICATION
+npm ci and npm run build passed with Node 24.19.0.
+Independent source-level content/link/translation/asset preservation checks passed.
+Responsive CSS was statically checked. Local browser visual/interaction verification
+was unavailable in this execution environment, so the checklist above still needs
+a real-browser review before production release.
+
+See REDESIGN-NOTES.md for design decisions, changed files, and exact QA boundaries.
